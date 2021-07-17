@@ -76,8 +76,8 @@ The details of the masking procedure for each sentence are the following:
 Contrary to BERT, the masking is done dynamically during pretraining (e.g., it changes at each epoch and is not fixed).
 ### Pretraining
 The model was trained on Google Cloud Engine TPUv3-8 machine (with 335 GB of RAM, 1000 GB of hard drive, 96 CPU cores) **8 v3 TPU cores** for 42K steps with a batch size of 128 and a sequence length of 128. The
-optimizer used is Adam with a learning rate of 3e-4, \\(\beta_{1} = 0.9\\), \\(\beta_{2} = 0.98\\) and
-\\(\epsilon = 1e-8\\), a weight decay of 0.01, learning rate warmup for 1,000 steps and linear decay of the learning
+optimizer used is Adam with a learning rate of 3e-4, β1 = 0.9, β2 = 0.98 and
+ε = 1e-8, a weight decay of 0.01, learning rate warmup for 1,000 steps and linear decay of the learning
 rate after.
 
 We tracked experiments and hyperparameter tunning on weights and biases platform. Here is link to main dashboard: <br>
@@ -104,10 +104,10 @@ IndicNLP Marathi news dataset consists 3 classes - `['lifestyle', 'entertainment
 | -- | -- | --
 | 9672 | 477 | 478
 
-Our Marathi RoBERTa `roberta-base-mr` model outperformed both classifier mentioned in [Arora, G. (2020). iNLTK](https://www.semanticscholar.org/paper/iNLTK%3A-Natural-Language-Toolkit-for-Indic-Languages-Arora/5039ed9e100d3a1cbbc25a02c82f6ee181609e83/figure/3) and [Kunchukuttan, Anoop et al. AI4Bharat-IndicNLP.](https://www.semanticscholar.org/paper/AI4Bharat-IndicNLP-Corpus%3A-Monolingual-Corpora-and-Kunchukuttan-Kakwani/7997d432925aff0ba05497d2893c09918298ca55/figure/4)
+💯 Our Marathi RoBERTa **`roberta-base-mr` model outperformed both classifier ** mentioned in [Arora, G. (2020). iNLTK](https://www.semanticscholar.org/paper/iNLTK%3A-Natural-Language-Toolkit-for-Indic-Languages-Arora/5039ed9e100d3a1cbbc25a02c82f6ee181609e83/figure/3) and [Kunchukuttan, Anoop et al. AI4Bharat-IndicNLP.](https://www.semanticscholar.org/paper/AI4Bharat-IndicNLP-Corpus%3A-Monolingual-Corpora-and-Kunchukuttan-Kakwani/7997d432925aff0ba05497d2893c09918298ca55/figure/4)
 
 
-Dataset | FT-W | FT-WC | INLP | iNLTK | robera-base-mr
+Dataset | FT-W | FT-WC | INLP | iNLTK | **roberta-base-mr 🏆**
 -- | -- | -- | -- | -- | --
 iNLTK Headlines | 83.06 | 81.65 | 89.92 | 92.4 | **97.48**
 
@@ -116,7 +116,7 @@ iNLTK Headlines | 83.06 | 81.65 | 89.92 | 92.4 | **97.48**
 
 [**`flax-community/mr-indicnlp-classifier`**](https://huggingface.co/flax-community/mr-indicnlp-classifier)
 
-Fine tuning experiment's weight and biases dashboard [link](https://wandb.ai/nipunsadvilkar/huggingface/runs/1242bike?workspace=user-nipunsadvilkar
+🧪 Fine tuning experiment's weight and biases dashboard [link](https://wandb.ai/nipunsadvilkar/huggingface/runs/1242bike?workspace=user-nipunsadvilkar
 )
 
 
@@ -128,9 +128,9 @@ This dataset consists 3 classes - `['state', 'entertainment', 'sports']` -  with
 | -- | -- | --
 | 9658 | 1210 | 1210
 
-Here as well `roberta-base-mr` outperformed `iNLTK` marathi news text classifier.
+💯 Here as well **`roberta-base-mr` outperformed `iNLTK` marathi news text classifier**.
 
-Dataset | iNLTK ULMFiT | roberta-base-mr
+Dataset | iNLTK ULMFiT | **roberta-base-mr 🏆**
 -- | -- | --
 iNLTK news dataset (kaggle) | 92.4 | **94.21**
 
