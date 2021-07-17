@@ -10,12 +10,12 @@ Pretrained model on Marathi language using a masked language modeling (MLM) obje
 ## Model description
 Marathi RoBERTa is a transformers model pretrained on a large corpus of Marathi data in a self-supervised fashion. 
 
-## Intended uses & limitations
+## Intended uses & limitations❗️
 You can use the raw model for masked language modeling, but it's mostly intended to be fine-tuned on a downstream task.
 Note that this model is primarily aimed at being fine-tuned on tasks that use the whole sentence (potentially masked)
 to make decisions, such as sequence classification, token classification or question answering. We used this model to fine tune on text classification task for iNLTK and indicNLP news text classification problem statement. Since marathi mc4 dataset is made by scraping marathi newspapers text, it will involve some biases which will also affect all fine-tuned versions of this model.
 
-### How to use
+### How to use❓
 You can use this model directly with a pipeline for masked language modeling:
 ```python
 >>> from transformers import pipeline
@@ -42,7 +42,7 @@ You can use this model directly with a pipeline for masked language modeling:
   'token_str': ' ३'}]
 ```
 
-## Training data
+## Training data 🏋🏻‍♂️
 The RoBERTa Marathi model was pretrained on `mr` dataset of C4 multilingual dataset:
 <br>
 <br>
@@ -51,7 +51,7 @@ The RoBERTa Marathi model was pretrained on `mr` dataset of C4 multilingual data
 The dataset can be downloaded in a pre-processed form from [allennlp](https://github.com/allenai/allennlp/discussions/5056) or huggingface's datsets - [mc4 dataset](https://huggingface.co/datasets/mc4).
   Marathi (`mr`) dataset consists of 14 billion tokens, 7.8 million docs and with weight ~70 GB of text.
 
-## Data Cleaning
+## Data Cleaning 🧹
 
 Though initial `mc4` marathi corpus size ~70 GB, Through data exploration, it was observed it contains docs from different languages especially thai, chinese etc. So we had to clean the dataset before traning tokenizer and model. Surprisingly, results after cleaning Marathi mc4 corpus data:
 
@@ -63,7 +63,7 @@ Clean docs count 1581396 out of 7774331. <br>
 Clean docs count 1700 out of 7928. <br>
 **~19.90%** of whole marathi validation split is actually Marathi.
 
-## Training procedure
+## Training procedure 👨🏻‍💻
 ### Preprocessing
 The texts are tokenized using a byte version of Byte-Pair Encoding (BPE) and a vocabulary size of 50265. The inputs of
 the model take pieces of 512 contiguous token that may span over documents. The beginning of a new document is marked
@@ -74,6 +74,7 @@ The details of the masking procedure for each sentence are the following:
 - In 10% of the cases, the masked tokens are replaced by a random token (different) from the one they replace.
 - In the 10% remaining cases, the masked tokens are left as is.
 Contrary to BERT, the masking is done dynamically during pretraining (e.g., it changes at each epoch and is not fixed).
+
 ### Pretraining
 The model was trained on Google Cloud Engine TPUv3-8 machine (with 335 GB of RAM, 1000 GB of hard drive, 96 CPU cores) **8 v3 TPU cores** for 42K steps with a batch size of 128 and a sequence length of 128. The
 optimizer used is Adam with a learning rate of 3e-4, β1 = 0.9, β2 = 0.98 and
@@ -83,7 +84,7 @@ rate after.
 We tracked experiments and hyperparameter tunning on weights and biases platform. Here is link to main dashboard: <br>
 [Link to Weights and Biases Dashboard for Marathi RoBERTa model](https://wandb.ai/nipunsadvilkar/roberta-base-mr/runs/19qtskbg?workspace=user-nipunsadvilkar)
 
-#### **Pretraining Results**
+#### **Pretraining Results 📊**
 
 RoBERTa Model reached **eval accuracy of 85.28%** around ~35K step **with train loss at 0.6507 and eval loss at 0.6219**.
 
@@ -155,6 +156,4 @@ Head to 🤗 Huggingface's spaces 🪐 to play with all three models:
 ![alt text](https://huggingface.co/docs/assets/hub/icon-space.svg)
 [Streamlit app of Pretrained Roberta Marathi model on Huggingface Spaces](https://huggingface.co/spaces/flax-community/roberta-base-mr)
 
-
-
-<!-- []https://huggingface.co/spaces/flax-community/roberta-base-mr -->
+![image](https://user-images.githubusercontent.com/15062408/126040832-f5723875-b70f-4e2e-93ad-213ddbe6180d.png)
