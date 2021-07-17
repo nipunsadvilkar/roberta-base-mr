@@ -1,4 +1,7 @@
 # RoBERTa base model for Marathi language
+
+![huggingface-marathi-roberta](huggingface-marathi-roberta.png)
+
 Pretrained model on Marathi language using a masked language modeling (MLM) objective. RoBERTa was introduced in
 [this paper](https://arxiv.org/abs/1907.11692) and first released in
 [this repository](https://github.com/pytorch/fairseq/tree/master/examples/roberta). We trained RoBERTa model for Marathi Language during community week hosted by Huggingface 🤗 using JAX/Flax for NLP & CV jax.
