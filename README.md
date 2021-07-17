@@ -121,7 +121,7 @@ Fine tuning experiment's weight and biases dashboard [link](https://wandb.ai/nip
 
 This dataset consists 3 classes - `['state', 'entertainment', 'sports']` -  with following docs distribution as per classes:
 
-  | train | eval | test
+| train | eval | test
 | -- | -- | --
 | 9658 | 1210 | 1210
 
@@ -139,7 +139,7 @@ iNLTK news dataset (kaggle) | 92.4 | **94.21**
 Fine tuning experiment's weight and biases dashboard [link](https://wandb.ai/nipunsadvilkar/huggingface/runs/2u5l9hon?workspace=user-nipunsadvilkar
 )
 
-## **Want to check how would they generalise on real world data?**
+## **Want to check how above models generalise on real world Marathi data?**
 
 Head to 🤗 Huggingface's spaces 🪐 to play with all three models:
 1. Mask Language Modelling with Pretrained Marathi RoBERTa model: <br>
