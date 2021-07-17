@@ -4,7 +4,8 @@ Pretrained model on Marathi language using a masked language modeling (MLM) obje
 [this repository](https://github.com/pytorch/fairseq/tree/master/examples/roberta). We trained RoBERTa model for Marathi Language during community week hosted by Huggingface 🤗 using JAX/Flax for NLP & CV jax.
 <h3 align="center">
   <p>RoBERTa base model for Marathi language</p>
-  <img src="huggingface-marathi-roberta.png" alt="huggingface-marathi-roberta" width="350" height="350">
+  <img src="https://user-images.githubusercontent.com/15062408/126040902-ea8808db-ec30-4a3f-bf95-5d3b10d674e9.png" alt="huggingface-marathi-roberta" width="350" height="350">
+
 <h3 align="center">
 
 ## Model description
@@ -147,7 +148,7 @@ Fine tuning experiment's weight and biases dashboard [link](https://wandb.ai/nip
 
 Head to 🤗 Huggingface's spaces 🪐 to play with all three models:
 1. Mask Language Modelling with Pretrained Marathi RoBERTa model: <br>
-[`flax-community/roberta-base-mr`](https://huggingface.co/flax-community/roberta-base-mr)
+[**`flax-community/roberta-base-mr`**](https://huggingface.co/flax-community/roberta-base-mr)
 2. Marathi Headline classifier: <br>
 [**`flax-community/mr-indicnlp-classifier`**](https://huggingface.co/flax-community/mr-indicnlp-classifier)
 3. Marathi news classifier: <br>
