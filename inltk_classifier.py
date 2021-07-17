@@ -61,3 +61,8 @@ trainer = Trainer(
     compute_metrics=compute_metrics,
 )
 trainer.train()
+
+model.save_pretrained("inltk-mr-classifier")
+tokenizer.save_pretrained("inltk-mr-classifier")
+
+trainer.evaluate()
