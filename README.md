@@ -165,3 +165,5 @@ Head to 🤗 Huggingface's spaces 🪐 to play with all three models:
 
 ## Credits
   Huge thanks to Huggingface 🤗 & Google Jax/Flax team for such a wonderful community week. Especially for providing such massive computing resource. Big thanks to [@patil-suraj](https://github.com/patil-suraj) & [@patrickvonplaten](https://github.com/patrickvonplaten) for mentoring during whole week.
+
+<img src=https://pbs.twimg.com/media/E443fPjX0AY1BsR.jpg:large>
