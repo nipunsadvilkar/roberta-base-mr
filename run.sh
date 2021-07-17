@@ -1,5 +1,7 @@
 HUB_TOKEN=`cat $HOME/.huggingface/token`
-export WANDB_USERNAME='nipunsadvilkar'
+# first login with following command to set API token:
+# $ python -m wandb login
+export WANDB_ENTITY='nipunsadvilkar'
 export WANDB_PROJECT='roberta-base-mr'
 python run_mlm_flax.py \
     --output_dir="${MODEL_DIR}" \
