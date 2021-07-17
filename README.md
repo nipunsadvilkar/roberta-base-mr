@@ -158,3 +158,10 @@ Head to 🤗 Huggingface's spaces 🪐 to play with all three models:
 [Streamlit app of Pretrained Roberta Marathi model on Huggingface Spaces](https://huggingface.co/spaces/flax-community/roberta-base-mr)
 
 ![image](https://user-images.githubusercontent.com/15062408/126040832-f5723875-b70f-4e2e-93ad-213ddbe6180d.png)
+
+## Team Members
+  - Nipun Sadvilkar [@nipunsadvilkar](https://github.com/nipunsadvilkar)
+  - Haswanth Aekula [@hassiahk](https://github.com/hassiahk)
+
+## Credits
+  Huge thanks to Huggingface 🤗 & Google Jax/Flax team for such a wonderful community week. Especially for providing such massive computing resource. Big thanks to [@patil-suraj](https://github.com/patil-suraj) & [@patrickvonplaten](https://github.com/patrickvonplaten) for mentoring during whole week.
